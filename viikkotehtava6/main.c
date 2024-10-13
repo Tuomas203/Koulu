@@ -154,13 +154,20 @@ int main(){
 /*---teht.5---*/
 
 
-struct Student {
+
+
+/*struct Student {
     int id;
     char name[50];
     int age;
 };
 
 int main(){
+
+    FILE *studentPointer;
+
+    studentPointer = fopen("C:/Users/Tuomas/Desktop/Github/Koulu/viikkotehtava6/studentData.txt","w");
+
     struct Student students[6];
 
     students[1].id=*"%d";
@@ -206,26 +213,39 @@ int main(){
         scanf("%s", &students[i].name);
 
         printf("How old is the %d student:", i);
-        scanf("%d", &students[i].age);
+        scanf("%d", &students[i].age);       
+    }
 
-}
+    int userNumber;
 
-    for(int j=1; j<=5;j++){
+    printf("Do you want to save the students information if yes input 1 if no input 2: ");
 
-        printf("%d, ",students[j].id);
-        printf("%s, ",students[j].name);
-        printf("%d, ",students[j].age );
-        printf("\n");
-}
+    scanf("%d", &userNumber);
 
+    if("%d", userNumber=1){
 
 
+        for(int j=1; j<=5;j++){
 
 
 
+            fprintf(studentPointer,"%d, ",students[j].id);
+            fprintf(studentPointer,"%s, ",students[j].name);
+            fprintf(studentPointer,"%d ",students[j].age );
+            fprintf(studentPointer,"\n");
+
+        }
+    }
+
+    else{
+        fprintf(studentPointer,"Photes not bwinted");
+    }
+
+
+    fclose(studentPointer);
 
     return 0;
-}
+}*/
 
 
 
