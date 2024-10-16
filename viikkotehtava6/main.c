@@ -84,39 +84,7 @@
 int main(){
     struct Student students[6];
 
-    students[1].id=*"%d";
 
-    strcpy(students[1].name, "%s");
-
-    students[1].age=*"%d";
-
-
-    students[2].id=*"%d";
-
-    strcpy(students[2].name, "%s");
-
-    students[2].age=*"%d";
-
-
-    students[3].id=*"%d";
-
-    strcpy(students[3].name, "%s");
-
-    students[3].age=*"%d";
-
-
-    students[4].id=*"%d";
-
-    strcpy(students[4].name, "%s");
-
-    students[4].age=*"%d";
-
-
-    students[5].id=*"%d";
-
-    strcpy(students[5].name, "%s");
-
-    students[5].age=*"%d";
 
     for(int i=1;i<=5; i++){
 
