@@ -4,6 +4,7 @@
 void initializeDisplay(void)
 {
 // See requirements for this function from display.h
+pinMode(12, );
 }
 
 

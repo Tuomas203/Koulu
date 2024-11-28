@@ -2,7 +2,7 @@
 #define DISPLAY_H
 #include <arduino.h>
 
-// jep jep
+
 /*
   initializeDisplay subroutine initializes 5 pins needed for controlling 7-segment
   displays in a cascade as follows:
@@ -60,3 +60,7 @@ void writeHighAndLowNumber(uint8_t tens,uint8_t ones);
 void showResult(byte result);
 
 #endif
+
+//https://www.youtube.com/watch?v=QI1IJLB42G8
+
+ // https://docs.arduino.cc/tutorials/communication/guide-to-shift-out/
