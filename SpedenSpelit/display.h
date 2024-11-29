@@ -64,3 +64,7 @@ void showResult(byte result);
 //https://www.youtube.com/watch?v=QI1IJLB42G8
 
  // https://docs.arduino.cc/tutorials/communication/guide-to-shift-out/
+
+//https://unioulu-my.sharepoint.com/:w:/r/personal/vpoyhtar23_students_oamk_fi/_layouts/15/Doc.aspx?sourcedoc=%7B894DA4F7-A12D-4FD6-9565-35EAF255BDE5%7D&file=Projektisuunnitelma_SpedenSpelit.docx&fromShare=true&action=default&mobileredirect=true
+
+// https://www.ti.com/lit/ds/symlink/sn74hc595.pdf
