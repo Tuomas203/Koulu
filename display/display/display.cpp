@@ -33,6 +33,7 @@ void initializeDisplay(void) {
   pinMode(latchClockPin, OUTPUT);
   pinMode(outEnablePin, OUTPUT);
   pinMode(serialInputPin, OUTPUT);
+  digitalWrite(outEnablePin, LOW);
 }
 
 
@@ -44,7 +45,7 @@ void writeByte(uint8_t number, bool last) {
     digitalWrite(shiftClockPin, LOW);
     if (digits[number][i] == 0) digitalWrite(serialInputPin, LOW);
     if (digits[number][i] == 1) digitalWrite(serialInputPin, HIGH);
-    digitalWrite(shiftClockPin, HIGH);
+    digitalWrite(shiftClockPin, HIGH); 
   }
   digitalWrite(latchClockPin, HIGH);
   digitalWrite(resetPin, LOW);
@@ -57,6 +58,7 @@ void writeHighAndLowNumber(uint8_t tens, uint8_t ones) {
   // See requirements for this function from display.h
   writeByte(tens, false);
   writeByte(ones, true);
+
 
 
 

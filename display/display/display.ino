@@ -6,6 +6,7 @@ initializeDisplay();
 
 writeByte(9, false);
 
+
 }
 
 void loop() {
