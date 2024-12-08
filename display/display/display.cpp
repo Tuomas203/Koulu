@@ -37,7 +37,7 @@ void initializeDisplay(void) {
 }
 
 
-void writeByte(uint8_t number, bool last) {
+void writeByte(uint8_t number) {
   digitalWrite(resetPin, HIGH);
   // See requirements for this function from display.h
   digitalWrite(latchClockPin, LOW);
@@ -45,25 +45,28 @@ void writeByte(uint8_t number, bool last) {
     digitalWrite(shiftClockPin, LOW);
     if (digits[number][i] == 0) digitalWrite(serialInputPin, LOW);
     if (digits[number][i] == 1) digitalWrite(serialInputPin, HIGH);
-    digitalWrite(shiftClockPin, HIGH); 
+    digitalWrite(shiftClockPin, HIGH);
   }
-  digitalWrite(latchClockPin, HIGH);
-  digitalWrite(resetPin, LOW);
-  
+  //digitalWrite(latchClockPin, HIGH);
+  //digitalWrite(resetPin, LOW);
 };
 
 
 
 void writeHighAndLowNumber(uint8_t tens, uint8_t ones) {
   // See requirements for this function from display.h
-  writeByte(tens, false);
-  writeByte(ones, true);
-
-
-
-
+  
+  writeByte(ones);
+  writeByte(tens);
+  digitalWrite(latchClockPin, HIGH);
 }
 
 void showResult(byte number) {
   // See requirements for this function from display.h
+  byte ones = number % 10;
+  byte tens = number / 10 % 10;
+  writeHighAndLowNumber(tens, ones);
+
+
+
 }

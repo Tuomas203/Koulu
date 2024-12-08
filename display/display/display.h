@@ -32,7 +32,7 @@ void initializeDisplay(void);
   multiple times to write all cascaded numbers to 7-segment
   displays.
 */
-void writeByte(uint8_t number, bool last);
+void writeByte(uint8_t number);
 
 
 /*
