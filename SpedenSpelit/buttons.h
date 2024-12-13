@@ -4,6 +4,11 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
+extern volatile unsigned long lastPressTime2;
+extern volatile unsigned long lastPressTime3;
+extern volatile unsigned long lastPressTime4;
+extern volatile unsigned long lastPressTime5;
+extern volatile unsigned long lastPressTime6;
 
 const byte firstPin = 2; // First PinChangeInterrupt on D-bus
 const byte lastPin =  5; // Last PinChangeInterrupt on D-bus

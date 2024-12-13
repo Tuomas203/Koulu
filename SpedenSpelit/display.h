@@ -32,7 +32,7 @@ void initializeDisplay(void);
   multiple times to write all cascaded numbers to 7-segment
   displays.
 */
-void writeByte(uint8_t number, bool last);
+void writeByte(uint8_t number);
 
 
 /*
@@ -57,14 +57,6 @@ void writeHighAndLowNumber(uint8_t tens,uint8_t ones);
   Parameters:
   byte result: A number between 0,1,..,99. This function
 */
-void showResult(byte result);
+void showResult(byte number);
 
 #endif
-
-//https://www.youtube.com/watch?v=QI1IJLB42G8
-
- // https://docs.arduino.cc/tutorials/communication/guide-to-shift-out/
-
-//https://unioulu-my.sharepoint.com/:w:/r/personal/vpoyhtar23_students_oamk_fi/_layouts/15/Doc.aspx?sourcedoc=%7B894DA4F7-A12D-4FD6-9565-35EAF255BDE5%7D&file=Projektisuunnitelma_SpedenSpelit.docx&fromShare=true&action=default&mobileredirect=true
-
-// https://www.ti.com/lit/ds/symlink/sn74hc595.pdf
